@@ -1,0 +1,122 @@
+/* root */
+:root {
+  --clr-primary-Green: #c5f82a;
+  
+  --clr-neutral-White: #ffffff;
+  --clr-neutral-Grey: #333333;
+  --clr-neutral-Dark-Grey: #1f1f1f;
+  --clr-neutral-Off-Black: #141414;
+
+/* Add this to your styles.css file */
+@font-face {
+  font-family: 'Inter';
+  src: url('./assets/fonts/Inter-VariableFont_slnt,wght.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+  --fs-body: .875rem;
+  --fs-heading: 1.375rem;
+  --fw-400: 400;
+  --fw-600: 600;
+  --fw-700: 700;
+}
+
+/* reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 { 
+  line-height: 1.1;
+}
+
+ul.li {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  margin-inline: auto;
+  font-style: italic;
+  color: var(--clr-primary-Green);
+}
+
+a {
+  color: var(--clr-neutral-White);
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Inter' , sans-serif;
+  font-weight: var(--fw-400);
+  font-size: var(--fs-body);
+  text-align: center;
+  color: var(--clr-neutral-White);
+  background: var(--clr-neutral-Off-Black);
+}
+
+/* text styles */
+.user-name {
+  font-size: var(--fs-heading);
+  font-weight: var(--fw-600);
+  margin-bottom: .5rem;
+}
+
+.user-location {
+  color: var(--clr-primary-Green);
+  font-weight: var(--fw-600);
+  margin-bottom: 1.25rem;
+}
+
+.list-item {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: .7rem;
+  border-radius: .3rem;
+  background: var(--clr-neutral-Grey);
+  transition: background .3s ease, color .3s ease;
+}
+
+.list-item:hover {
+  color: var(--clr-neutral-Off-Black);
+  background: var(--clr-primary-Green);
+}
+
+
+/* layout  styles */
+.wrapper {
+  display: grid;
+  place-items: center;
+  min-height: 100dvh;
+}
+
+.profile-container {
+  width: 25em;
+  padding: 1.75rem;
+  border-radius: .8rem;
+  background: var(--clr-neutral-Dark-Grey);
+}
+
+.social-links {
+  margin-top: 1.5rem;
+  list-style-type: none;
+}
+
+.social-links * + * {
+  margin-top: .75rem;
+}
+
+
+/* general styles */
+.user-image {
+  width: 7em;
+  margin-bottom: 1.5rem;
+  border-radius: 50%;
+}
